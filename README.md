@@ -11,7 +11,7 @@ Bachelorettes - Contestants => one to many
 
 Contestants - Outings => many to many
 - have many Outings / - have many Contestants
-[ ] needs a joins tables GroupDates
+[x] needs a joins tables GroupDates
 [x] Outings: name string, location string, and date MM/DD/YY
 
 ## Be sure to read all user stories BEFORE beginning your work

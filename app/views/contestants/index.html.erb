@@ -1,0 +1,6 @@
+<h1><%= @bachelorette.name %>'s Contestants</h1>
+
+<% @bachelorette.contestants.each do |contestant| %>
+  <%= contestant.name %>
+  <%= contestant.hometown %>
+<% end %>
