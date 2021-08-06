@@ -2,9 +2,11 @@ class ContestantsController < ApplicationController
   def index
     @bachelorette = Bachelorette.find(params[:id])
   end
-  # def show
-  #
-  # end
+
+  def show
+
+  end
+
   # def new
   #
   # end

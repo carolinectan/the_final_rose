@@ -34,6 +34,11 @@ RSpec.describe "bachelorette's contestants show page" do
     expect(page).to have_no_content(@bachelorette2.name)
   end
 
+  it "links to a contestant's show page by clicking on their name" do
+    expect(page).to have_link(@contestant1.name)
 
-  # And I can click on any contestants name (as a link) to go to that contestants show page "/contestants/:id"
+    click_on("#{@contestant1.name}")
+
+    expect(current_path).to eq("/bachelorettes/#{@bachelorette1.id}/contestants/#{@contestant1.id}")    
+  end
 end
