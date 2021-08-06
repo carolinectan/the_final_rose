@@ -15,11 +15,25 @@ RSpec.describe "bachelorette's contestants show page" do
 
   it "links to the bachelorette's contestants" do
     expect(page).to have_content(@contestant1.name)
+    expect(page).to have_content(@contestant1.age)
+    expect(page).to have_content(@contestant1.hometown)
+
     expect(page).to have_content(@contestant2.name)
+    expect(page).to have_content(@contestant2.age)
+    expect(page).to have_content(@contestant2.hometown)
+
     expect(page).to have_content(@contestant3.name)
+    expect(page).to have_content(@contestant3.age)
+    expect(page).to have_content(@contestant3.hometown)
+
     expect(page).to have_no_content(@contestant4.name)
+    expect(page).to have_no_content(@contestant4.age)
+    expect(page).to have_no_content(@contestant4.hometown)
 
     expect(page).to have_content(@bachelorette1.name)
     expect(page).to have_no_content(@bachelorette2.name)
   end
+
+
+  # And I can click on any contestants name (as a link) to go to that contestants show page "/contestants/:id"
 end
