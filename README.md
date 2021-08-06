@@ -4,6 +4,16 @@ This Rails application is intended to be used as a practice challenge for Mod 2.
 
 The Final Rose is an application that displays past Bachelorette's, their contestants, and the outings (dates) that the contestants went on while on the show. Bachelorettes have many contestants, contestants belong to a bachelorette (that feels not great to type), contestants can have many outings that they go on and an outing can have more than one contestant on it (this is a real thing that happens on the show). Before getting started, think about what this relationship will look like between Bachelors, Contestants, and Outings.
 
+
+Bachelorettes - Contestants => one to many
+- have many Contestants / - belong to a Bachelorette
+[x] add description column
+
+Contestants - Outings => many to many
+- have many Outings / - have many Contestants
+[ ] needs a joins tables GroupDates
+[x] Outings: name string, location string, and date MM/DD/YY
+
 ## Be sure to read all user stories BEFORE beginning your work
 ---
 
